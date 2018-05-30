@@ -1,13 +1,14 @@
 const path = require('path')
 
 module.exports = {
+  env: true,
   entry: 'src/index.js',
   html: {
     template: path.resolve('public', 'index.html')
   },
   staticFolder: 'public',
-  presets: [
-    require('poi-preset-react')(),
-    require('poi-preset-sw-precache')()
+  plugins: [
+    require('@poi/plugin-eslint')(),
+    require('@poi/plugin-sw-precache')()
   ]
 }

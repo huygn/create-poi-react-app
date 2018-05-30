@@ -1,9 +1,9 @@
 {
-  "name": "create-poi-react-app",
-  "version": "0.1.5",
+  "name": "@huygn/create-poi-react-app",
+  "version": "0.0.1",
   "description": "Create a React app which uses Poi.",
   "repository": {
-    "url": "egoist/create-poi-react-app",
+    "url": "huygn/create-poi-react-app",
     "type": "git"
   },
   "bin": {
@@ -20,7 +20,7 @@
     "lint": "xo",
     "ava": "ava test/test.js"
   },
-  "author": "egoist <0x142857@gmail.com>",
+  "author": "huygn <gnhuy91@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "cac": "^4.0.0",

@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import registerServiceWorker from '@poi/plugin-sw-precache/register-service-worker';
+import { AppContainer } from 'react-hot-loader';
+
 import './index.css';
 import App from './App';
-import registerServiceWorker from 'poi-preset-sw-precache/register-service-worker';
-import {AppContainer} from 'react-hot-loader';
 
 const render = Component => {
   ReactDOM.render(
@@ -15,9 +16,5 @@ const render = Component => {
 };
 
 render(App);
-
-if (module.hot) {
-  module.hot.accept('./App', () => { render(App) });
-}
 
 registerServiceWorker();

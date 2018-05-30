@@ -1,5 +1,8 @@
 {
   "presets": [
-    "react-app"
+    "poi"
+  ],
+  "plugins": [
+    "react-hot-loader/babel"
   ]
 }
